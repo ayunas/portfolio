@@ -20,11 +20,13 @@ header {
     align-items : flex-start;
 
     div.title {
-        vertical-align: top;
+       display: flex;
+       align-items : flex-start;
         .bitmoji {
-            width : 7rem;
-            
+            width : 5rem;
+            padding: 0 1rem;
         }
+
     }
 
     .links {
