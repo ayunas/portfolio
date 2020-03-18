@@ -40,9 +40,14 @@ form {
     align-items : flex-start;
     position: sticky;
     top : 0;
-    padding: 3rem;
+    left: 0;
+    // width : 90vw;
+    padding: 2rem;
+    margin : 0 auto;
+    z-index: 3;
     // border-bottom: 1px solid black;
     box-shadow: 1rem;
+    transition: all ease .5s;
 
     div.title {
        display: flex;
@@ -71,7 +76,9 @@ form {
 }
 
 .scroll {
-    box-shadow: 0 0 18px lightgrey;
+    box-shadow: 26px 17px 42px 0px rgba(99,87,99,1);
+    transition: all ease .5s;
+
 }
 
 footer {

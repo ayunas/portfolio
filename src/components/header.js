@@ -8,15 +8,12 @@ const Header = ({ siteTitle }) => {
   const [scroll,setScroll] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      for (const ent of entries) {
-        if (ent.isIntersecting) {
-          console.log(ent);
-        }
-      }
+    document.addEventListener("scroll", () => {
+      // console.log('scroll event added. pixels scrolled:',window.scrollY);
+      const scrollCheck = window.scrollY > 10;
+      scrollCheck ? setScroll(true) : setScroll(false);
     })
-    observer.observe(document.querySelector('.nav'))
-  },[])
+  })
 
   const handleScroll = (e) => {
     console.log('scrolling',e.target);
@@ -24,7 +21,7 @@ const Header = ({ siteTitle }) => {
   }
 
   return (
-    <header className={scroll ? "nav scroll" : "nav"} onWheel={handleScroll}>
+    <header className={scroll ? "nav scroll" : "nav"}>
         <div className="title">
           <img className="bitmoji" src={bitmoji} alt="bitmoji selfie" />
           <Link to="/">{siteTitle}</Link>
