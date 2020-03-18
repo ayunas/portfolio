@@ -2,15 +2,13 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const AboutPage = () => {
+const ArticlesPage = () => {
     return (
         <Layout>
-            <SEO title="About" />
-            <div>
-                This is the about page
-            </div>
+            <SEO title="Articles" />
+            <div>These are my articles</div>
         </Layout>
     )
 }
 
-export default AboutPage    
+export default ArticlesPage;
