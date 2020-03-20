@@ -2,12 +2,13 @@ import { Link, graphql,useStaticQuery } from "gatsby";
 import React, {useState,useEffect} from "react";
 import './style.scss';
 import bitmoji from '../images/bitmoji.png';
-// import Img from 'gatsby-image';
+import Img from 'gatsby-image';
 
 const Header = (props) => {
   const {siteTitle} = props;
+  console.log('props', props);
 
-  const imgQuery = useStaticQuery(graphql`
+  const queryData = useStaticQuery(graphql`
   query {
     file(relativePath: {eq : "bitmoji.png"}){
     childImageSharp {
@@ -17,6 +18,8 @@ const Header = (props) => {
     }
   }
 }`);
+
+console.log(queryData);
 
   const [scroll,setScroll] = useState(false);
 
@@ -32,11 +35,11 @@ const Header = (props) => {
     <header className={scroll ? "nav scroll" : "nav"}>
         <div className="title">
           <img className="bitmoji" src={bitmoji} alt="bitmoji selfie" />
-          {/* <Img fluid={imgQuery.file.childImageSharp.fluid}
+          <Img fluid={queryData.file.childImageSharp.fluid}
           objectFit="cover"
           objectPosition="50% 50%"
           alt="This is a picture of my face."
-          /> */}
+          />
           <Link to="/">{siteTitle}</Link> 
         </div>
 
@@ -50,6 +53,10 @@ const Header = (props) => {
   )
 }
 
+export default Header
+
+
+
 // Header.propTypes = {
 //   siteTitle: PropTypes.string,
 // }
@@ -57,8 +64,3 @@ const Header = (props) => {
 // Header.defaultProps = {
 //   siteTitle: ``,
 // }
-
-
-
-
-export default Header
