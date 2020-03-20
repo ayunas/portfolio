@@ -17,4 +17,16 @@ const IndexPage = () => (
   </Layout>
 )
 
+export const imageQuery = graphql`
+query {
+  bitmoji : file(relativePath: {eq : "bitmoji.png"})
+  {
+    childImageSharp {
+      fluid(maxWidth : 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}`;
+
 export default IndexPage
