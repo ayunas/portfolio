@@ -9,9 +9,10 @@ import Project from '../components/project';
 const ProjectsPage = () => (
   <Layout>
     <p>Welcome to the projects page</p>
-    <div class="projects">
-      <Project title="project title" techStack="JS" description="cool project!" img={'blah'}/>
-    </div>
+    <section class="projects">
+      <Project title="project title" techStack="JS" description="cool project!" image={"https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg"}/>
+      
+    </section>
     <SEO title="Projects" />
     {/* <Filler/> */}
     <Link to="/">Go back to the homepage</Link>

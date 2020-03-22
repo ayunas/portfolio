@@ -3,13 +3,19 @@ import React from 'react';
 // import Img from 'gatsby-image';
 
 
-const Project = ({title,techStack,description}) => {
+const Project = ({title,techStack,description,image}) => {
+
+    const [hover,setHover] = React.useState(false);
+
     return (
-        <section class="project">
-            <p>{title}</p>
-            <p>{techStack}</p>
-            <p>{description}</p>
-            <div>This is a Project</div>
+        <section onClick={() => setHover(!hover)} class="project">
+            {hover ? <div class="project-info">
+                            <h3>{title}</h3>
+                            <p>{techStack}</p>
+                            <p>{description}</p>
+                    </div> : 
+            <img src={image}/> }
+            
         </section>
     )
 }
