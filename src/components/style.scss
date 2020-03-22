@@ -2,6 +2,11 @@ html {
     font-size: 62.5%;
     body {
         font-size: 1.6rem;
+        h1,h2,h3,h4,h5,h6,p {
+            margin : 0;
+            padding : 0;
+        }
+        box-sizing: border-box;
     }
 }
 
@@ -38,12 +43,50 @@ form {
     align-items: center;
     .project {
         border : 5px solid black;
-    }
+        transition : all ease .5s;
+        position : relative;
+        // img, .project-info {
+            // width : 30rem;
+            // height : 30rem;
+            // padding : .5rem;
+            // transition : all ease-in-out .5s;
+        // }
+        img {
+            width : 100%;
+            height : 100%;
+        }
+        .project-info {
+            display : flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            // margin : 0 auto;    
+            position : absolute;
+            top : 30%;
+            left : 30%;
+            color : white;
+            opacity : 0%;
+            transition : all ease .5s;
+            h3 {
+                font-size : 3rem;
+            }
+            p {
+                font-size : 2rem;
+            }
+        }
+
+        &:hover {
+            transition : all ease .5s; 
+
+            .project-info {
+                color : pink;
+                opacity : 100%;
+                transition : all ease .5s;
+            }
+        }
+
+    };
 }
-
-
-
-
 
 .nav {
     display: flex;

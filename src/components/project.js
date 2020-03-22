@@ -7,15 +7,27 @@ const Project = ({title,techStack,description,image}) => {
 
     const [hover,setHover] = React.useState(false);
 
+    const handleHover = () => {
+        console.log('handle hover');
+        setHover(!hover);
+    }
+
     return (
-        <section onClick={() => setHover(!hover)} class="project">
-            {hover ? <div class="project-info">
+        <section onMouseEnter ={handleHover} onMouseLeave={handleHover} className="project">
+            <div className="project-info">
+                <h3>{title}</h3>
+                <p>{techStack}</p>
+                <p>{description}</p>
+            </div>
+
+            <img src={image}/>
+
+            {/* {hover ? <div className="project-info">
                             <h3>{title}</h3>
                             <p>{techStack}</p>
                             <p>{description}</p>
                     </div> : 
-            <img src={image}/> }
-            
+            <img src={image}/> } */}
         </section>
     )
 }
