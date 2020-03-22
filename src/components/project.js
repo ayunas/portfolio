@@ -3,17 +3,14 @@ import React from 'react';
 // import Img from 'gatsby-image';
 
 
-const Project = () => {
+const Project = ({title,techStack,description}) => {
     return (
-        // <section>
-            
-        //     <p>{title}</p>
-        //     <p>{techStack}</p>
-        //     <p>{description}</p>
-
-
-        // </section>
-        <div>This is a Project</div>
+        <section class="project">
+            <p>{title}</p>
+            <p>{techStack}</p>
+            <p>{description}</p>
+            <div>This is a Project</div>
+        </section>
     )
 }
 

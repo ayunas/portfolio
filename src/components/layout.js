@@ -15,6 +15,7 @@ import "./layout.scss"
 // import Test from './test';
 
 const Layout = ({ children }) => {
+  console.log(children);
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

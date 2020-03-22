@@ -8,10 +8,12 @@ import Project from '../components/project';
 
 const ProjectsPage = () => (
   <Layout>
-    <SEO title="Projects" />
     <p>Welcome to the projects page</p>
-    <Filler/>
-    <Project/>
+    <div class="projects">
+      <Project title="project title" techStack="JS" description="cool project!" img={'blah'}/>
+    </div>
+    <SEO title="Projects" />
+    {/* <Filler/> */}
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )

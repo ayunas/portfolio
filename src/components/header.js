@@ -8,20 +8,21 @@ const Header = (props) => {
   const {siteTitle} = props;
   console.log('props', props);
 
-  const queryData = useStaticQuery(graphql`
-  query {
-    file(relativePath: {eq : "bitmoji.png"}){
-    childImageSharp {
-      fluid(maxWidth : 1000) {
-        ...GatsbyImageSharpFluid
+  const imgQuery = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
-  }
-}`);
+  `);
 
-console.log(queryData);
+console.log(imgQuery);
 
-  const [scroll,setScroll] = useState(false);
+const [scroll,setScroll] = useState(false);
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -35,11 +36,7 @@ console.log(queryData);
     <header className={scroll ? "nav scroll" : "nav"}>
         <div className="title">
           <img className="bitmoji" src={bitmoji} alt="bitmoji selfie" />
-          <Img fluid={queryData.file.childImageSharp.fluid}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          alt="This is a picture of my face."
-          />
+          <Img fluid={imgQuery.file.childImageSharp.fluid} />
           <Link to="/">{siteTitle}</Link> 
         </div>
 

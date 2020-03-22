@@ -32,6 +32,18 @@ form {
     }
 }
 
+.projects {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    .project {
+        border : 5px solid black;
+    }
+}
+
+
+
+
 
 .nav {
     display: flex;
