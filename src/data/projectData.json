@@ -17,7 +17,7 @@
         "title" : "Pytower",
         "description" : "A simple yet fun game where you have to get to the treasure room.  Pick up weapons and items, and watch out for enemy attacks!",
         "tech" : ["HTML, CSS, Python, Django ,AWS"],
-        "url" : "http://pytower.lambdaschool.me",
+        "url" : "http://pytower.herokuapp.com/start",
         "github" : "https://github.com/CS24-Team-Dream/Pytower",
         "image" : "../images/pytower.png"
     },
@@ -52,13 +52,15 @@
     {
         "title" : "Portfolio",
         "description" : "My personal portfolio website, displaying all the projects and info right here, written in Gatsby.js, hosted in Amazon S3",
-        "tech" : ["Gatsby","React","CSS", "AWS"]
+        "tech" : ["Gatsby","React","CSS", "AWS"],
+        "url" : "http://portfolio.lambdaschool.me",
+        "github" : "https://github.com/ayunas/portfolio"
     },
     {
         "title" : "Smurf Village",
         "description" : "A simple app to add custom smurfs to the smurf village.  Built to leverage the redux state management Library",
         "tech" : ["React", "Redux", "AWS"],
-        "url" : "http://smurfs.lambdaschool.me",
+        "url" : "http://smurfs-redux.lambdaschool.me",
         "github" : "https://github.com/ayunas/Sprint-Challenge-Redux-Smurfs"
     },
     {
@@ -72,7 +74,7 @@
         "title" : "Replate",
         "description" : "An API built for a Web App that seeks to reduce excess food wastage, by connecting Restaurants with Volunteers available to pickup leftover food",
         "tech" : ["Node.js","Express.js","Heroku","Postgres","Postman"],
-        "url" : "http://replate.lambdaschool.me",
+        "url" : "http://bit.ly/replate",
         "github" : "https://github.com/Replate-Lambda-BuildWeeks/Replate-Node"
     },
     {
@@ -81,5 +83,12 @@
         "tech" : ["Javascript","Python", "Node.js", "React", "AWS"],
         "url" : "http://jazeera.lambdaschool.me",
         "github" : "https://github.com/CS2-Build-Week-2/react-front-end/tree/amir/src/Algorithm"
+    },
+    {
+        "title" : "Todo or Not Todo",
+        "description" : "A simple Todo Web App, built with React & Redux",
+        "tech" : ["React", "Redux", "AWS"],
+        "url" : "http://todo-redux.lambdaschool.me",
+        "github" : "https://github.com/ayunas/todo-redux"
     }
 ]
