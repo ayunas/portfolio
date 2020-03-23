@@ -4,7 +4,7 @@
         "description" : "A collaborative cooking app to store, share, and modify recipes", 
         "tech" : ["React Native", "Expo", "Node.js", "Postrgres", "Heroku","AWS"],
         "url" : "http://recipeshare.lambdaschool.me",
-        "github" : "https://github.com/ayunas/RecipeShare"
+        "github" : "https://github.com/RecipeShare/recipeshare-rn"
     },
     {
         "title": "Lambda Blockchain",
