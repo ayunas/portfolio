@@ -18,7 +18,8 @@
         "description" : "A simple yet fun game where you have to get to the treasure room.  Pick up weapons and items, and watch out for enemy attacks!",
         "tech" : ["HTML, CSS, Python, Django ,AWS"],
         "url" : "http://pytower.lambdaschool.me",
-        "github" : "https://github.com/CS24-Team-Dream/Pytower"
+        "github" : "https://github.com/CS24-Team-Dream/Pytower",
+        "image" : "../images/pytower.png"
     },
     {
         "title" : "LS8 CPU",
@@ -58,10 +59,10 @@
         "description" : "A simple app to add custom smurfs to the smurf village.  Built to leverage the redux state management Library",
         "tech" : ["React", "Redux", "AWS"],
         "url" : "http://smurfs.lambdaschool.me",
-        "github" : "https://github.com/ayunas/Sprint-Challenge-Redux-Smurfs",
+        "github" : "https://github.com/ayunas/Sprint-Challenge-Redux-Smurfs"
     },
     {
-        "title" : "Star Wars",
+        "title" : "Star Wars Cards",
         "description" : "A fun display of star wars characters with light saber sound effects. Leveraged the SWAPI Api. (https://swapi.co/) Built to leverage Redux, the react-sound library, and redux-thunk for API requests with redux.",
         "tech" : ["React","Redux","SCSS"],
         "url" : "http://starwars.lambdaschool.me",

@@ -41,6 +41,7 @@ form {
     display : flex;
     justify-content: center;
     align-items: center;
+    flex-wrap : wrap;
     .project {
         border : 5px solid black;
         transition : all ease .5s;
