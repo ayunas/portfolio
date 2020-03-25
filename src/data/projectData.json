@@ -4,9 +4,8 @@
         "description" : "A collaborative cooking app to store, share, and modify recipes", 
         "tech" : ["React Native", "Expo", "Node.js", "Postrgres", "Heroku","AWS"],
         "url" : "http://recipeshare.lambdaschool.me",
-        "image" : "pytower.png",
+        "image" : "recipeshare.png",
         "github" : "https://github.com/RecipeShare/recipeshare-rn"
-        
     },
     {
         "title": "Lambda Blockchain",
