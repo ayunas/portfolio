@@ -17,8 +17,8 @@ const Project = ({title,tech,description,image}) =>{
             {/* <img src={require(`${image}`)}/> */}
             <div className="project-info">
                 <h3>{title}</h3>
-                <p>{tech}</p>
                 <p>{description}</p>
+                <ul>Tech Stack : {tech.map(t => <li>{t}</li>)}</ul>
             </div>
         </section>
     )}
