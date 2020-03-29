@@ -2,7 +2,7 @@
     {
         "title" : "RecipeShare",
         "description" : "A collaborative cooking app to store, share, and modify recipes", 
-        "tech" : ["React Native", "Expo", "Node.js", "Postrgres", "Heroku","AWS"],
+        "tech" : ["ReactNative", "Expo", "Node", "Postgres", "Heroku","AWS"],
         "url" : "http://recipeshare.lambdaschool.me",
         "image" : "recipeshare.png",
         "github" : "https://github.com/RecipeShare/recipeshare-rn"
@@ -10,7 +10,7 @@
     {
         "title": "Lambda Blockchain",
         "description" : "A simple blockchain web-app to mine lambda-school (LS) cryptocurrency, add transactions, and view the entire blockchain.  Using SHA-256 for block hashing and a Proof of Work Algorithm",
-        "tech" : ["React", "Python", "Flask","AWS"],
+        "tech" : ["Reactjs", "Python", "Flask","AWS"],
         "url" : "http://blockchain.lambdaschool.me",
         "image" : "pytower.png",
         "github" : "https://github.com/ayunas/Blockchain"
@@ -18,7 +18,7 @@
     {
         "title" : "Pytower",
         "description" : "A simple yet fun game where you have to get to the treasure room.  Pick up weapons and items, and watch out for enemy attacks!",
-        "tech" : ["HTML, CSS, Python, Django ,AWS"],
+        "tech" : ["HTML5", "CSS3", "Python", "Django" ,"AWS"],
         "url" : "http://pytower.herokuapp.com/start",
         "image" : "pytower.png",
         "github" : "https://github.com/CS24-Team-Dream/Pytower"
@@ -26,7 +26,7 @@
     {
         "title" : "LS8 CPU",
         "description" : "An 8 bit CPU, exploring low level computer architecture concepts. Simulated and built with Python.",
-        "tech" : ["React","Python","Assembly","AWS"],
+        "tech" : ["Python","Assembly"],
         "url" : "http://ls8.lambdaschool.me",
         "image" : "pytower.png",
         "github" : "https://github.com/ayunas/ls8_cpu"
@@ -34,7 +34,7 @@
     {
         "title" : "Jazeera",
         "description" : "A series of scripts written in Node.js to automate a series of steps to mine a JazeeraCoin.  An Automated Graph Traversal to explore a 500 rooms on an unexplored island, A script to collect 1000 gold by picking up and selling items at the shop.  Another script to purchase a username, a script to decipher and decode Assembly code, and finally a script to mine a Jazeera coin.  the traversal of a player through a 500 room island maze.",
-        "tech" : ["Javascript","Python", "Node.js", "React", "AWS"],
+        "tech" : ["Javascript","Python", "Node", "Reactjs", "AWS"],
         "url" : "http://jazeera.lambdaschool.me",
         "image" : "pytower.png",
         "github" : "https://github.com/CS2-Build-Week-2/react-front-end/tree/amir/src/Algorithm"
@@ -42,23 +42,23 @@
     {
         "title" : "Got Github",
         "description" : "A simple web app, displaying info for any user on github.com. Leveraging the github API",
-        "tech" : ["React","AWS"],
+        "tech" : ["Reactjs","AWS","SCSS"],
         "url" : "http://gotgithub.lambdaschool.me",
-        "image" : "pytower.png",
+        "image" : "gotgithub.png",
         "github" : "https://github.com/ayunas/gotgithub"
     },
     {
         "title" : "IMDb Movies",
         "description" : "Simple Movie Searching and Favoriting.  Leveraging the IMDb API",
-        "tech" : ["React","Flask","Postgres","AWS"],
+        "tech" : ["Reactjs","Flask","Postgres","AWS"],
         "url" : "http://movies.lambdaschool.me",
-        "image" : "pytower.png",
+        "image" : "imdb.png",
         "github" : "https://github.com/ayunas/imdb-movies"
     },
     {
         "title" : "Portfolio",
         "description" : "My personal portfolio website, displaying all the projects and info right here, written in Gatsby.js, hosted in Amazon S3",
-        "tech" : ["Gatsby","React","CSS", "AWS"],
+        "tech" : ["Gatsby","Reactjs","SCSS","AWS"],
         "url" : "http://portfolio.lambdaschool.me",
         "image" : "pytower.png",
         "github" : "https://github.com/ayunas/portfolio"
@@ -66,15 +66,15 @@
     {
         "title" : "Smurf Village",
         "description" : "A simple app to add custom smurfs to the smurf village.  Built to leverage the redux state management Library",
-        "tech" : ["React", "Redux", "AWS"],
+        "tech" : ["Reactjs", "Redux", "AWS"],
         "url" : "http://smurfs-redux.lambdaschool.me",
-        "image" : "pytower.png",
+        "image" : "smurfs.png",
         "github" : "https://github.com/ayunas/Sprint-Challenge-Redux-Smurfs"
     },
     {
         "title" : "Star Wars Cards",
         "description" : "A fun display of star wars characters with light saber sound effects. Leveraged the SWAPI Api. (https://swapi.co/) Built to leverage Redux, the react-sound library, and redux-thunk for API requests with redux.",
-        "tech" : ["React","Redux","SCSS"],
+        "tech" : ["Reactjs","Redux","SCSS"],
         "url" : "http://starwars.lambdaschool.me",
         "image" : "pytower.png",
         "github" : "https://github.com/ayunas/StarWars-Api"
@@ -82,15 +82,15 @@
     {
         "title" : "Replate",
         "description" : "An API built for a Web App that seeks to reduce excess food wastage, by connecting Restaurants with Volunteers available to pickup leftover food",
-        "tech" : ["Node.js","Express.js","Heroku","Postgres","Postman"],
+        "tech" : ["Node","Express.js","Heroku","Postgres","Postman"],
         "url" : "http://bit.ly/replate",
-        "image" : "pytower.png",
+        "image" : "replate.png",
         "github" : "https://github.com/Replate-Lambda-BuildWeeks/Replate-Node"
     },
     {
         "title" : "Jazeera",
-        "description" : "A series of scripts written in Node.js to automate a series of steps to mine a JazeeraCoin.  An Automated Graph Traversal to explore a 500 rooms on an unexplored island, A script to collect 1000 gold by picking up and selling items at the shop.  Another script to purchase a username, a script to decipher and decode Assembly code, and finally a script to mine a Jazeera coin.  the traversal of a player through a 500 room island maze.",
-        "tech" : ["Javascript","Python", "Node.js", "React", "AWS"],
+        "description" : "A series of scripts written in Node to automate a series of steps to mine a JazeeraCoin.  An Automated Graph Traversal to explore a 500 rooms on an unexplored island, A script to collect 1000 gold by picking up and selling items at the shop.  Another script to purchase a username, a script to decipher and decode Assembly code, and finally a script to mine a Jazeera coin.  the traversal of a player through a 500 room island maze.",
+        "tech" : ["Reactjs","Javascript","Python", "Node", "AWS"],
         "url" : "http://jazeera.lambdaschool.me",
         "image" : "pytower.png",
         "github" : "https://github.com/CS2-Build-Week-2/react-front-end/tree/amir/src/Algorithm"
@@ -98,9 +98,9 @@
     {
         "title" : "Todo or Not Todo",
         "description" : "A simple Todo Web App, built with React & Redux",
-        "tech" : ["React", "Redux", "AWS"],
+        "tech" : ["Reactjs", "Redux", "AWS"],
         "url" : "http://todo-redux.lambdaschool.me",
-        "image" : "pytower.png",
+        "image" : "todo.png",
         "github" : "https://github.com/ayunas/todo-redux"
     }
 ]

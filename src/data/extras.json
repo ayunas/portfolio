@@ -1,0 +1,18 @@
+[
+    {
+        "title" : "Instagram Clone",
+        "description" : "A model of a set of instagram cards", 
+        "tech" : ["Reactjs","CSS3", "Netlify"],
+        "url" : "http://clone-instagram.netlify.com",
+        "image" : "instagram.png",
+        "github" : "https://github.com/ayunas/React-Insta-Clone"
+    },
+    {
+        "title" : "Digital Resume",
+        "description" : "An electronic version of Amir Yunas's resume", 
+        "tech" : ["HTML5", "LESS", "Netlify"],
+        "url" : "http://amir-resume.netlify.com",
+        "image" : "resume.png",
+        "github" : "https://github.com/ayunas/Resume-Digital"
+    }
+]
