@@ -1,15 +1,16 @@
-$fade : all ease .5s;
+$fade : all ease 1s;
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     body {
         font-size: 1.6rem;
-        // h1,h2,h3,h4,h5,h6,p {
-        //     margin : 0;
-        //     padding : 0;
-        // }
         box-sizing: border-box;
+        h3,p,h4,ul,li {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin : 0 5px;
+        }
     }
 }
 
@@ -45,12 +46,14 @@ form {
     justify-content: center;
     align-items: center;
     flex-wrap : wrap;
+
     .project {
         border : 5px solid black;
         transition : $fade;
         position : relative;
-        width : 30rem;
-        height : 30rem;
+        width : 40rem;
+        height : 35rem;
+        overflow : hidden;
 
         img {
             width : 100%;
@@ -61,32 +64,48 @@ form {
             transition : $fade;
         }
         .project-info {
-            display : flex; 
+            display : flex;
             align-items: center;
+            text-align: center;
             flex-wrap: wrap;
             flex-direction: column;
-            padding-right : 25px;
-              
+            width : 90%;
             position : absolute;
-            margin : auto;
-            top :  0;
-            left : 0;
-            right : 0;
-            bottom : 0;
+            top :  30px;
+            right : 18px;
+            // left : 10px;
+            // bottom : 20px;
             opacity : 0%;
             transition : $fade;
-            border : 1px solid fuchsia;
+            // border : 1px solid red;
             word-wrap: break-word;
 
             ul {
                 display : flex;
                 justify-content: space-evenly;
+                flex-wrap : wrap;
                 list-style: none;
+                padding : 0;
+
+                // li {
+                //     margin : 0 5px;
+                // }
+
             }
 
             h3,p {
-                margin : auto;
+                // margin : auto;
+                margin-block-start: 0;
+                margin-block-end: 0;
             }
+
+            figcaption {
+                display : inline;
+                position: relative;
+                bottom : 15px;  
+                
+            }
+
         }
 
         &:hover {
