@@ -51,8 +51,10 @@ form {
         border : 5px solid black;
         transition : $fade;
         position : relative;
-        width : 28rem;
-        height : 30rem;
+        flex-basis: 30rem;
+        width : 40rem;
+        height : 35rem;
+        // height : 30rem;
         overflow : hidden;
 
         img {
