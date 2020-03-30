@@ -12,7 +12,7 @@
         "description" : "A simple blockchain web-app to mine lambda-school (LS) cryptocurrency, add transactions, and view the entire blockchain.  Using SHA-256 for block hashing and a Proof of Work Algorithm",
         "tech" : ["Reactjs", "Python", "Flask","AWS"],
         "url" : "http://blockchain.lambdaschool.me",
-        "image" : "pytower.png",
+        "image" : "blockchain.png",
         "github" : "https://github.com/ayunas/Blockchain"
     },
     {

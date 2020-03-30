@@ -14,11 +14,11 @@ html {
     }
 }
 
-#gatsby-focus-wrapper {
-   margin: 0 auto;
-   max-width: 1000px;
-   padding: 5rem;
-}
+// #gatsby-focus-wrapper {
+//    margin: 0 auto;
+//    max-width: 1000px;
+//    padding: 5rem;
+// }
 
 #hi {
     font-size: 2.5rem;
@@ -41,6 +41,11 @@ form {
     }
 }
 
+main {
+    width : 1000px;
+    margin : 0 auto;
+}
+
 .projects {
     display : flex;
     justify-content: center;
@@ -54,6 +59,7 @@ form {
         flex-basis: 30rem;
         width : 40rem;
         height : 35rem;
+        margin : .5rem;
         // height : 30rem;
         overflow : hidden;
 
