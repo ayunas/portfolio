@@ -41,7 +41,7 @@ const [scroll,setScroll] = useState(false);
         </div>
 
         <div className="links">
-          <Link to="/about">About</Link>
+          <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/articles">Articles</Link>
           <Link to="/contact">Contact</Link>

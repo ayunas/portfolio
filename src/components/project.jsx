@@ -35,11 +35,8 @@ const techStack = {Reactjs,Redux,Node,Django,Flask,Expo,Netlify,Heroku,Postgres,
 
 const Project = ({title,tech,description,image,github,demo}) =>{
 
-    // console.log(tech[0], typeof tech[0]);
-    // console.log(typeof(eval(tech[0])));
     const img_src = images(`./${image}`);
-    // console.log(img_src);
-    
+
     
     return (
         <section className="project">

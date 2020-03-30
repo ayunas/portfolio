@@ -42,8 +42,45 @@ form {
 }
 
 main {
-    width : 1000px;
+    // display : flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // width : 880px;
     margin : 0 auto;
+}
+
+figure.selfie-info {
+    // display : flex;
+    // justify-content: flex-end;
+    // background-image : url("../images/velvet-selfie-2.jpg"); 
+    // border : 10px double black;
+    // border-radius: 40px;
+    box-shadow: 0px 0px 10px 10px #000000;
+    // background-size: cover;
+    height : 700px;
+    width : 700px;
+
+   
+
+    figcaption {
+        max-width: 300px;
+        color : black;
+    }
+}
+
+#selfie {
+    display : block;
+    // transform : rotate(90deg);
+    width : 600px;
+    margin : 10rem 3rem;
+    // border : 10px double black;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 10px #000000;
+    background-size : contain;
+}
+
+#project-title {
+    margin : 10px auto;
 }
 
 .projects {
@@ -58,7 +95,7 @@ main {
         position : relative;
         flex-basis: 30rem;
         width : 40rem;
-        height : 35rem;
+        height : 32rem;
         margin : .5rem;
         // height : 30rem;
         overflow : hidden;
