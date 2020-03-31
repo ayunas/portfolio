@@ -9,22 +9,28 @@ import Terminal from 'react-animated-term';
 
 const termLines = [
   {
-    'text' : "Hi.  My name is Amir...",
+    'text' : "Hi there!  My name is Amir...",
     'cmd' : true
   },
   {
-    'text' : "A full stack software engineer, with a little bit of cloud on the side...",
+    'text' : "I'm a full stack developer, with a little bit of cloud on the side...",
     'cmd' : true
-  }
+  },
+  {
+    'text' : "Welcome to my portfolio site.  Feel free to check out my projects and articles in the top right...",
+    'cmd' : true
+  },
 ]
 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <img id="selfie" src={velvetSelfie} alt="Amir Yunas Pic"/>
-    <Terminal lines={termLines} interval={80} />
-    {/* <p><strong id="hi">I'm Amir</strong> A full stack software engineer, with a little bit of cloud on the side...</p> */} */}
+    <figure className="index-image">
+      <img id="selfie" src={velvetSelfie} alt="Amir Yunas Pic"/>
+      <Terminal lines={termLines} interval={80} />
+    </figure>
+    {/* <p><strong id="hi">I'm Amir</strong> A full stack software engineer, with a little bit of cloud on the side...</p> */}
   </Layout>
 )
 
