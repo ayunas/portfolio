@@ -24,22 +24,98 @@ html {
     font-size: 2.5rem;
 }
 
-
-
-form {
+.bitmoji-form {
     display : flex;
-    flex-direction: column;
-    align-items: center;
-    margin : 5rem;
-    input,textarea {
-        width : 50rem;
-        margin : .5rem;
+    justify-content: center;
+    img#bitmoji-bye {
+        position : relative;
+        top : 5rem;
+        max-height : 30rem;
     }
-}
+
+
+    form {
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        width : 30%;
+        // margin : 0 auto;
+       
+        .Terminal-window {
+            font-size: 5rem;
+        }
+    
+    
+        input,textarea {
+            text-align: left;
+            border : 1px solid lightgray;
+            border-color: lightgray;
+            border-radius: .5rem;
+            width : 50%;
+            height : 4rem;
+            margin : 2rem 0;
+            padding : 1rem;
+    
+            &::placeholder {
+                color : lightgrey;
+            }
+    
+            // &:focus {
+            //     border-color : green;
+            //     box-shadow: 0 0 1rem green;
+            // }
+    
+        }
+    
+        textarea { //keep all the same styling from the input, but just change the height by declaring the css selector below and modifying height.
+            height : 15rem;
+        }
+    
+        button {
+            width : 31%;
+            border-radius: 1rem;
+            background-color: black;
+            margin-top : 10px;
+            padding : .75rem;
+            cursor : pointer;
+        }
+    }
+ }
+
+
+
 
 main {
     margin : 0 auto;
 }
+
+.social-media {
+    display : flex;
+    justify-content : center;
+    align-items: baseline;
+    margin : 0 auto;
+    a {
+        margin : 2rem;
+        text-decoration: none;
+        color : black;
+        &:hover {
+            .info-box {
+                // display : block;
+                transition: $fade;
+                opacity: 1;
+            }
+        }
+
+    }
+    .info-box {
+        // display : none;
+        opacity: 0;
+        transition: $fade;
+    }
+}
+
+
+
 
 .index-image {
     display : flex;

@@ -7,6 +7,7 @@ import nauticaSelfie from '../images/nautica-selfie.png';
 import velvetSelfie from '../images/velvet-selfie-2.jpg';
 import Terminal from 'react-animated-term';
 
+
 const termLines = [
   {
     'text' : "Hi there!  My name is Amir...",
@@ -17,9 +18,23 @@ const termLines = [
     'cmd' : true
   },
   {
-    'text' : "Welcome to my portfolio site.  Feel free to check out my projects and articles in the top right...",
+    'text' : "\n",
+    'cmd' : false
+  },
+  {
+    'text' : "Welcome to my portfolio site. Sit back, relax, and check out my projects and articles in the top right...",
     'cmd' : true
   },
+  {
+    'text' : "\n",
+    'cmd' : false
+  },
+  {
+    'text' : "If you want to chit chat, click on Contact in the top right...",
+    'cmd' : true
+  }
+
+
 ]
 
 
@@ -28,7 +43,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <figure className="index-image">
       <img id="selfie" src={velvetSelfie} alt="Amir Yunas Pic"/>
-      <Terminal lines={termLines} interval={80} />
+      <Terminal lines={termLines} interval={50} />
     </figure>
     {/* <p><strong id="hi">I'm Amir</strong> A full stack software engineer, with a little bit of cloud on the side...</p> */}
   </Layout>
