@@ -6,11 +6,13 @@ import sendIcon from '@iconify/icons-bytesize/send';
 import { Icon } from '@iconify/react';
 import Terminal from 'react-animated-term';
 import {Link} from 'gatsby';
-import {SocialMediaIconsReact as Social} from 'social-media-icons-react';
+// import {SocialMediaIconsReact as Social} from 'social-media-icons-react';
 import twitter from '@iconify/icons-logos/twitter';
 import stackoverflow from '@iconify/icons-logos/stackoverflow-icon';
 import github from '@iconify/icons-logos/github-icon';
 import medium from '@iconify/icons-cib/medium';
+// npm install --save-dev @iconify/react @iconify/icons-cib
+import linkedin from '../images/icons/linkedin-logo.png';
 import centco from '../images/icons/centco.png';
 // import bitmojiBeanbag from '../images/bitmoji-beanbag.png';
 import bitmojiBye from '../images/bitmoji-bye.png';
@@ -52,7 +54,7 @@ const ContactPage = () => {
                 {/* <div class="bitmoji-form"> */}
                     <form onSubmit={submitForm} action="https://formspree.io/mrgazpyb">
                         {/* <label>Reach Out</label> */}
-                        <Terminal lines={termForm} interval={70} />
+                        <h1 className="terminal-header"><Terminal lines={termForm} interval={70} /></h1>
                         <input name="name" type="text" placeholder="Name" onChange={handleChange}/>
                         <input name="email" type="email" placeholder="email" type="email" onChange={handleChange}/>
                         <textarea name="message" type="message" placeholder="message" onChange={handleChange} />
@@ -94,6 +96,12 @@ const ContactPage = () => {
                     <a href="https://beta.cent.co/@ayunas" target="_blank"><img src={centco} style={{width : '6rem'}}/>
                     <br/>
                     <span class="info-box">Cent.co</span>
+                    </a>
+                </div>
+                <div className="social-div">
+                    <a href="https://linkedin.com/in/amiryunas" target="_blank"><img src={linkedin} style={{width : '9rem'}}/>
+                    <br/>
+                    <span class="info-box">LinkedIN</span>
                     </a>
                 </div>
             </section>

@@ -22,7 +22,7 @@ const termLines = [
     'cmd' : false
   },
   {
-    'text' : "Welcome to my portfolio site. Sit back, relax, and check out my projects and articles in the top right...",
+    'text' : "Welcome to my portfolio site. Sit back, relax, and check out my projects at the top right...",
     'cmd' : true
   },
   {
