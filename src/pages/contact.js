@@ -6,7 +6,7 @@ import sendIcon from '@iconify/icons-bytesize/send';
 import { Icon } from '@iconify/react';
 import Terminal from 'react-animated-term';
 import {Link} from 'gatsby';
-// import {SocialMediaIconsReact as Social} from 'social-media-icons-react';
+import {SocialMediaIconsReact as Social} from 'social-media-icons-react';
 import twitter from '@iconify/icons-logos/twitter';
 import stackoverflow from '@iconify/icons-logos/stackoverflow-icon';
 import github from '@iconify/icons-logos/github-icon';
@@ -48,8 +48,8 @@ const ContactPage = () => {
     return (
         <Layout>
             <SEO title="Contact" />
-                <div class="bitmoji-form">
-                    <img id="bitmoji-bye" src={bitmojiBye} alt="Amir Bitmoji"/>
+                   
+                {/* <div class="bitmoji-form"> */}
                     <form onSubmit={submitForm} action="https://formspree.io/mrgazpyb">
                         {/* <label>Reach Out</label> */}
                         <Terminal lines={termForm} interval={70} />
@@ -58,25 +58,44 @@ const ContactPage = () => {
                         <textarea name="message" type="message" placeholder="message" onChange={handleChange} />
                         <button type="submit"><Icon icon={sendIcon} width="30" color="white"/></button>
                     </form>
-                </div>
+                    <div style={{position:"relative", width:0, height:0}}>
+                        <img id="bitmoji-bye" src={bitmojiBye} alt="Amir Bitmoji"/>
+                    </div>
+                    
             
             <section class="social-media">
-                <a href="http://www.twitter.com/amiryunas" target="_blank"><Icon icon={twitter} width={75}/>
-                <p class="info-box">Twitter</p>
-                </a>
-                
-                <a href="https://stackoverflow.com/users/8161309/amir-yunas" target="_blank"><Icon icon={stackoverflow} width={75}/>
-                 <p class="info-box">Stackoverflow</p>
-                </a>
-                <a href="http://www.github.com/ayunas" target="_blank"><Icon icon={github} width={75}/>
-                 <p class="info-box">Github</p>
-                </a>
-                <a href="https://medium.com/@amiryunas" target="_blank"><Icon icon={medium} width={75} color="black" />
-                 <p class="info-box">Medium</p>
-                </a>
-                <a href="https://beta.cent.co/@ayunas" target="_blank"><img src={centco} style={{width : '7.5rem'}}/>
-                 <p class="info-box">Cent.co</p>
-                </a>
+                <div className="social-div">
+                    <a href="http://www.twitter.com/amiryunas" target="_blank">
+                    <Icon icon={twitter} width={60}/>
+                    <br/>
+                    <span class="info-box">Twitter</span> 
+                    </a>
+                </div>
+                <div className="social-div">
+                    <a href="https://stackoverflow.com/users/8161309/amir-yunas" target="_blank">
+                    <Icon icon={stackoverflow} width={50}/>
+                    <br/>
+                    <span class="info-box">Stackoverflow</span>
+                    </a>
+                </div>
+                <div className="social-div">
+                    <a href="http://www.github.com/ayunas" target="_blank"><Icon icon={github} width={60}/>
+                    <br/>
+                    <span class="info-box">Github</span>
+                    </a>
+                </div>
+                <div className="social-div">
+                    <a href="https://medium.com/@amiryunas" target="_blank"><Icon icon={medium} width={60} color="black" />
+                    <br/>
+                    <span class="info-box">Medium</span>
+                    </a>
+                </div>
+                <div className="social-div">
+                    <a href="https://beta.cent.co/@ayunas" target="_blank"><img src={centco} style={{width : '6rem'}}/>
+                    <br/>
+                    <span class="info-box">Cent.co</span>
+                    </a>
+                </div>
             </section>
         </Layout>
     )

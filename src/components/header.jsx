@@ -3,6 +3,7 @@ import React, {useState,useEffect} from "react";
 import './style.scss';
 import bitmoji from '../images/bitmoji.png';
 import Img from 'gatsby-image';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const Header = (props) => {
   const {siteTitle} = props;
@@ -37,14 +38,15 @@ const [scroll,setScroll] = useState(false);
         <div className="title">
           <img className="bitmoji" src={bitmoji} alt="bitmoji selfie" />
           <Img fluid={imgQuery.file.childImageSharp.fluid} />
-          <Link to="/">{siteTitle}</Link> 
+          {/* <Link to="/">{siteTitle}</Link>  */}
+          <Link fade to="/">{siteTitle}</Link>
         </div>
 
         <div className="links">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/articles">Articles</Link>
-          <Link to="/contact">Contact</Link>
+          <Link className="header-links" to="/">Home</Link>
+          <Link className="header-links" to="/projects">Projects</Link>
+          <Link className="header-links" to="/articles">Articles</Link>
+          <Link className="header-links" to="/contact">Contact</Link>
         </div>
     </header>
   )
