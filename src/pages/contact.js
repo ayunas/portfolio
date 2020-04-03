@@ -66,14 +66,14 @@ const ContactPage = () => {
                     
             
             <section class="social-media">
-                <div className="social-div">
+                <div className="social-div twitter">
                     <a href="http://www.twitter.com/amiryunas" target="_blank">
                     <Icon icon={twitter} width={60}/>
                     <br/>
                     <span class="info-box">Twitter</span> 
                     </a>
                 </div>
-                <div className="social-div">
+                <div className="social-div stack-overflow">
                     <a href="https://stackoverflow.com/users/8161309/amir-yunas" target="_blank">
                     <Icon icon={stackoverflow} width={50}/>
                     <br/>
@@ -92,11 +92,11 @@ const ContactPage = () => {
                     <span class="info-box">Medium</span>
                     </a>
                 </div>
-                <div className="social-div">
+                <div className="social-div cent">
                     <a href="https://beta.cent.co/@ayunas" target="_blank"><img src={centco} style={{width : '6rem'}}/>
                     <br/>
                     <span class="info-box">Cent.co</span>
-                    </a>
+                    </a>    
                 </div>
                 <div className="social-div">
                     <a href="https://linkedin.com/in/amiryunas" target="_blank"><img src={linkedin} style={{width : '9rem'}}/>

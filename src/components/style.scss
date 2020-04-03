@@ -37,18 +37,20 @@ header {
     font-size : 5rem;
 }
 
-
-
 main {
-    margin : 0 auto;
+    width : 80%;
+    margin : 9rem auto;
 }
 
-// #gatsby-focus-wrapper {
-// //    margin: 0 auto;
-// //    max-width: 1000px;
-// //    padding: 5rem;
-//     // height : 100vh;
-// }
+#gatsby-focus-wrapper {
+    width : 100%;
+    // display : flex;
+    // justify-content: center;
+//    margin: 0 auto;
+//    max-width: 1000px;
+//    padding: 5rem;
+    // height : 100vh;
+}
 
 #hi {
     font-size: 2.5rem;
@@ -58,7 +60,7 @@ img#bitmoji-bye {
     max-height : 30rem;
     position: absolute;
     bottom : 15rem;
-    left : 4vw;
+    left : 3vw;
 }
 
 form {
@@ -114,10 +116,13 @@ form {
     display : flex;
     justify-content : center;
     align-items: center;
+
+    
+
     .social-div {
-        margin : 3rem;
+        margin : 1rem;
         a {
-            margin : 2rem;
+            margin : .5rem;
             text-decoration: none;
             color : black;
             svg {
@@ -131,13 +136,18 @@ form {
                     text-align: center;
                 }
             }
-
-
-
+        }
     }
-    
 
+    .twitter,.stack-overflow {
+        margin-right : -1.9rem;
     }
+
+    .cent {
+        margin-right : -1rem;
+    }
+
+
     .info-box {
         // display : none;
         opacity: 0;
@@ -268,12 +278,13 @@ form {
     justify-content: space-between;
     background-color: white;
     align-items : flex-start;
-    position: sticky;
-    width : 90%;
+    position: fixed;
+    width : 60%;
     top : 0;
-    left: 0;
+    left: 50%;
+    transform : translateX(-50%);
+    // right : 20%;
     padding: 2rem;
-    margin : 0 auto;
     z-index: 3;
     box-shadow: 1rem;
     transition: $fade;
