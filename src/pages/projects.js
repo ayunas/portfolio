@@ -27,7 +27,7 @@ const ProjectsPage = () => {
         </section>
         <SEO title="Projects" />
         {/* <Filler/> */}
-        <Link to="/">Go back to the homepage</Link>
+        {/* <Link to="/">Go back to the homepage</Link> */}
       </Layout>
 )}
 

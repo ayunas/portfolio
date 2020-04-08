@@ -95,13 +95,5 @@
         "url" : "http://todo-redux.lambdaschool.me",
         "image" : "todo.png",
         "github" : "https://github.com/ayunas/todo-redux"
-    },
-    {
-        "title" : "Digital Resume",
-        "description" : "An electronic version of Amir Yunas's resume", 
-        "tech" : ["HTML5", "LESS", "Netlify"],
-        "url" : "http://amir-resume.netlify.com",
-        "image" : "resume.png",
-        "github" : "https://github.com/ayunas/Resume-Digital"
     }
 ]

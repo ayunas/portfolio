@@ -32,6 +32,7 @@ header {
 }
 
 aside {
+    margin-top : -3rem;
 
     h2 {
         // margin : 0 auto !important;
@@ -94,6 +95,7 @@ aside {
 
 main {
     width : 80%;
+    height : 69vh;
     margin : 9rem auto;
 }
 
@@ -230,8 +232,8 @@ form {
 
     #selfie {
         display : block;
-        max-width : 600px;
-        max-height : 80vh;
+        max-width : 60rem;
+        max-height : 60vh;
         // margin : 1rem 3rem;
     
         border-radius: 40px;
@@ -253,6 +255,8 @@ form {
     justify-content: center;
     align-items: center;
     flex-wrap : wrap;
+    // overflow : scroll;
+    // z-index: -1;
 
     .project {
         border : 5px solid black;
@@ -272,6 +276,7 @@ form {
             max-height : 100%;
             // transition: $fade;
             transition : $fade;
+            // z-index: -1;
         }
         .project-info {
             display : flex;
@@ -383,11 +388,16 @@ footer {
     display : flex;
     justify-content: center;
     align-items : center;
+    position : fixed;
+    z-index: 20;
+    width : 100%;
+    // bottom : 0px;
     padding : 2rem;
-    margin-top : 3rem;
+    // margin-top : 3rem;
     border : 1px solid $gatsby-purple;
     // opacity: .5;
     background-color: $gatsby-purple;
+    // opacity: .8;
     color : white;
     a {
         margin : 0 1rem;

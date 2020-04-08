@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"  
 import SEO from "../components/seo";
 import nauticaSelfie from '../images/nautica-selfie.png';
-import velvetSelfie from '../images/velvet-selfie-2.jpg';
+import velvetSelfie from '../images/velvet-selfie-borte.jpg';
 // import Terminal from '../../react-animated-term/';
 import Terminal from 'react-animated-term';
 import Tech from '../components/Tech';
