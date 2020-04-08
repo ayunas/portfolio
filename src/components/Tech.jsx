@@ -27,14 +27,29 @@ const images = require.context('../images/icons', true);
 // const techStack = {Reactjs,Redux,Node,Django,Flask,Expo,Netlify,Heroku,Postgres,AWS,Python,HTML5,CSS3,Assembly,Javascript,Gatsby,SCSS,LESS,Express,Postman,ReactNative}
 
 const Tech = ({icon}) => {
-    console.log(icon);
+    console.log('icon: ' , icon);
+    console.log(icon === 'aws.png');
 
     const img_src = images(`./${icon}`);
+    let caption;
+    
+
+    switch (icon) {
+        case 'aws.png':
+            caption = icon.replace('aws.png','Amazon Web Services');
+            break;
+        case 'reactnative.png':
+            caption = icon.replace('native.png', ' native');
+            break;
+        default: 
+            caption = icon.replace('.png','');
+    }
+
 
     return (
         <section className="tech">
             <img src={img_src} alt={icon}/>
-            <span class="info-box">{icon}</span> 
+            <span class="info-box">{caption}</span> 
         </section>
     )
 }
