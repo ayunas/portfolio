@@ -31,17 +31,60 @@ header {
     }
 }
 
-.tech-stack {
-    img {
-        width : 10rem;
+aside {
+
+    h2 {
+        // margin : 0 auto !important;
+        text-align : center;
+    }
+
+    .tech-stack {
+        display : flex;
+        flex-wrap : wrap;
+        max-width : 30rem;
+        // height : 8rem;
+        justify-content: center;
+        align-items: center;
+        // border : 1px solid fuchsia;
+        
+        .tech {
+
+            position : relative;
+
+            img {
+                // border : 5px solid green;
+                width : 7rem;
+                margin : 1rem;
+                padding-top : 1rem;
+                
+            }
+
+            &:hover {
+                .info-box {
+                    // display : block;
+                    transition: $fade;
+                    opacity: 1;
+                    // text-align: center;
+                }
+            }
+        }
+
+       
+
+        .info-box {
+            // display : none;
+            position : absolute;
+            right :10px;
+            top : 0;
+            opacity: 0;
+            transition: $fade;
+        }
     }
 }
 
-.Terminal-code {
-    span::after {
-        border : 5px solid fuchsia;
-    }
-}
+
+
+
 
 
 .terminal-heading {
@@ -172,6 +215,9 @@ form {
 }
 
 
+
+
+
 .index-image {
     display : flex;
     // align-items: center;
@@ -180,6 +226,7 @@ form {
     .Terminal-window {
         margin : 0 5rem;
         font-size: 4rem;
+        width : 60rem;
         // max-height : 80vh;
         // max-width : 70vw;
         // overflow : scroll;

@@ -107,11 +107,13 @@ const IndexPage = () => (
     <figure className="index-image">
       <img id="selfie" src={velvetSelfie} alt="Amir Yunas Pic"/>
       <Terminal lines={termLines} interval={50} />
-      <div className="tech-stack">
-        {/* {projectData.map(p => <Tech icon={p.image} />)} */}
-        {techStackData.map(t => <Tech icon={t.iconFile} />)}
-      </div>
-      
+
+      <aside>
+        <h2>Tech Stack</h2>
+        <div className="tech-stack">
+          {techStackData.map(t => <Tech icon={t.iconFile} />)}
+        </div>
+      </aside>
     </figure>
     {/* <p><strong id="hi">I'm Amir</strong> A full stack software engineer, with a little bit of cloud on the side...</p> */}
   </Layout>

@@ -26,16 +26,15 @@ import techIcons from '../images/techIcons';
 const images = require.context('../images/icons', true);
 // const techStack = {Reactjs,Redux,Node,Django,Flask,Expo,Netlify,Heroku,Postgres,AWS,Python,HTML5,CSS3,Assembly,Javascript,Gatsby,SCSS,LESS,Express,Postman,ReactNative}
 
-
-
 const Tech = ({icon}) => {
     console.log(icon);
 
     const img_src = images(`./${icon}`);
 
     return (
-        <section className="tech-stack">
+        <section className="tech">
             <img src={img_src} alt={icon}/>
+            <span class="info-box">{icon}</span> 
         </section>
     )
 }

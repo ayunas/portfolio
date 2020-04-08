@@ -4,5 +4,53 @@
     },
     {
         "iconFile" : "redux.png"
+    },
+    {
+        "iconFile" : "python.png"
+    },
+    {
+        "iconFile" : "html.png"
+    },
+    {
+        "iconFile" : "css.png"
+    },
+    {
+        "iconFile" : "scss.png"
+    },
+    {
+        "iconFile" : "less.png"
+    },
+    {
+        "iconFile" : "nodejs.png"
+    },
+    {
+        "iconFile" : "express.png"
+    },
+    {
+        "iconFile" : "django.png"
+    },
+    {
+        "iconFile" : "flask.png"
+    },
+    {
+        "iconFile" : "sqlite.png"
+    },
+    {
+        "iconFile" : "postgres.png"
+    },
+    {
+        "iconFile" : "reactnative.png"
+    },
+    {
+        "iconFile" : "bash.png"
+    },
+    {
+        "iconFile" : "git.png"
+    },
+    {
+        "iconFile" : "postman.png"
+    },
+    {
+        "iconFile" : "aws.png"
     }
 ]
