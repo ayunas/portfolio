@@ -53,7 +53,7 @@ const Project = ({title,tech,description,image,github,demo}) =>{
                 <figure>
                     <Social icon="github" size={40} iconSize={10} roundness={20} url={github}/>
                     {/* <figcaption>code</figcaption> */}
-                    <Social icon="web" size={40} iconSize={10} roundness={20} url={demo}/>
+                    {demo && <Social icon="web" size={40} iconSize={10} roundness={20} url={demo}/>}
                 </figure>
             </div>
         </section>

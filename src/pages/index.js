@@ -5,7 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo";
 import nauticaSelfie from '../images/nautica-selfie.png';
 import velvetSelfie from '../images/velvet-selfie-2.jpg';
+// import Terminal from '../../react-animated-term/';
 import Terminal from 'react-animated-term';
+import Tech from '../components/Tech';
+// import projectData from '../data/projectData.json';
+import techStackData from '../data/techStack.json';
 
 
 const termLines = [
@@ -25,16 +29,75 @@ const termLines = [
     'text' : "Welcome to my portfolio site. Sit back, relax, and check out my projects at the top right...",
     'cmd' : true
   },
+  // {
+  //   'text' : "This is my tech stack: ",
+  //   'cmd' : true
+  // },
+  // {
+  //   'text' : "HTML",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "CSS",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "SCSS",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Javascript",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Python",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "React",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "React Native",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Redux",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Node",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Express",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Django",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "Flask",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "SQL",
+  //   'cmd' : false
+  // },
+  // {
+  //   'text' : "AWS",
+  //   'cmd' : false
+  // },
   {
     'text' : "\n",
     'cmd' : false
   },
   {
-    'text' : "If you want to chit chat, click on Contact in the top right...",
+    'text' : "If you want to chat, click on Contact in the top right...",
     'cmd' : true
-  }
-
-
+  },
+  
 ]
 
 
@@ -44,6 +107,11 @@ const IndexPage = () => (
     <figure className="index-image">
       <img id="selfie" src={velvetSelfie} alt="Amir Yunas Pic"/>
       <Terminal lines={termLines} interval={50} />
+      <div className="tech-stack">
+        {/* {projectData.map(p => <Tech icon={p.image} />)} */}
+        {techStackData.map(t => <Tech icon={t.iconFile} />)}
+      </div>
+      
     </figure>
     {/* <p><strong id="hi">I'm Amir</strong> A full stack software engineer, with a little bit of cloud on the side...</p> */}
   </Layout>

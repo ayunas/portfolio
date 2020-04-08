@@ -3,7 +3,7 @@
         "title" : "RecipeShare",
         "description" : "A collaborative cooking app to store, share, and modify recipes", 
         "tech" : ["ReactNative", "Expo", "Node", "Postgres", "Heroku","AWS"],
-        "url" : "http://recipeshare.lambdaschool.me",
+        "url" : "",
         "image" : "recipeshare.png",
         "github" : "https://github.com/RecipeShare/recipeshare-rn"
     },
@@ -11,7 +11,7 @@
         "title": "Lambda Blockchain",
         "description" : "A simple blockchain web-app to mine lambda-school (LS) cryptocurrency, add transactions, and view the entire blockchain.  Using SHA-256 for block hashing and a Proof of Work Algorithm",
         "tech" : ["Reactjs", "Python", "Flask","AWS"],
-        "url" : "http://blockchain.lambdaschool.me",
+        "url" : "",
         "image" : "blockchain.png",
         "github" : "https://github.com/ayunas/Blockchain"
     },
@@ -27,7 +27,7 @@
         "title" : "LS8 CPU",
         "description" : "An 8 bit CPU, exploring low level computer architecture concepts. Simulated and built with Python.",
         "tech" : ["Python","Assembly"],
-        "url" : "http://ls8.lambdaschool.me",
+        "url" : "",
         "image" : "ls8.png",
         "github" : "https://github.com/ayunas/ls8_cpu"
     },
@@ -52,7 +52,7 @@
         "title" : "Portfolio",
         "description" : "My personal portfolio website, displaying all the projects and info right here, written in Gatsby.js, hosted in Amazon S3",
         "tech" : ["Gatsby","Reactjs","SCSS","AWS"],
-        "url" : "http://portfolio.lambdaschool.me",
+        "url" : "",
         "image" : "portfolio.png",
         "github" : "https://github.com/ayunas/portfolio"
     },
@@ -60,7 +60,7 @@
         "title" : "Jazeera",
         "description" : "A series of scripts to explore an unchartered treasure island.  Collect gold, purchase a game handle, decipher and decode assembly code, and  mine a Jazeera cryptocurrency",
         "tech" : ["Javascript","Python", "Node", "AWS"],
-        "url" : "http://jazeera.lambdaschool.me",
+        "url" : "",
         "image" : "jazeera.png",
         "github" : "https://github.com/CS2-Build-Week-2/react-front-end/tree/amir/src/Algorithm"
     },
@@ -74,7 +74,7 @@
     },
     {
         "title" : "Star Wars Cards",
-        "description" : "A fun display of star wars characters with light saber sound effects. Leveraged the SWAPI Api. (https://swapi.co/) Built to leverage Redux, the react-sound library, and redux-thunk for API requests with redux.",
+        "description" : "A fun display of star wars characters with light saber sound effects. Leveraged the SWAPI Api. (https://swapi.co/) Built to leverage Redux, the react-sound library, and redux-thunk for API requests with redux",
         "tech" : ["Reactjs","Redux","SCSS"],
         "url" : "http://starwars.lambdaschool.me",
         "image" : "starwars.png",
