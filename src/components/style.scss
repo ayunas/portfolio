@@ -77,10 +77,10 @@ aside {
       // display : none;
       font-size: 1.5rem;
       font-weight: bolder;
-      position: absolute;
+      // position: absolute;
       // right :-10px;
-      left: 67px;
-      top: -5px;
+      // left: 67px;
+      // top: -5px;
       opacity: 0;
       transition: $fade;
     }
@@ -172,6 +172,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  position : relative;
 
   .social-div {
     margin: 1rem;
@@ -187,7 +188,7 @@ form {
           // display : block;
           transition: $fade;
           opacity: 1;
-          text-align: center;
+          // text-align: center;
         }
       }
     }
@@ -198,6 +199,8 @@ form {
     margin-right: -1.9rem;
   }
 
+  
+
   .cent {
     margin-right: -1rem;
   }
@@ -206,7 +209,30 @@ form {
     // display : none;
     opacity: 0;
     transition: $fade;
+    text-align : center;
   }
+
+  .github {
+    margin-left : 1rem;
+    // border : 1px solid green;
+    text-align : center;
+  }
+
+  .medium {
+    margin-left : 1.5rem;
+    text-align : center;
+  }
+
+  .linkedin-popup {
+    // margin-top : -2rem;
+    margin : 15px;
+    position : absolute;
+    bottom : 5;
+    // bottom : -20;
+    margin-top : -.5rem;
+  }
+
+
 }
 
 .index-image {
