@@ -33,24 +33,38 @@ const Tech = ({icon}) => {
 
     const img_src = images(`./${icon}`);
     let caption;
+    let infoBox;
+    let img;
     
 
     switch (icon) {
         case 'aws.png':
             caption = icon.replace('aws.png','Amazon Web Services');
+            infoBox = <p className="info-box">{caption}</p>
+            img = <img className="aws-icon" src={img_src} alt={icon} />
             break;
         case 'reactnative.png':
             caption = icon.replace('native.png', ' native');
+            infoBox = <p className="info-box">{caption}</p>
+            img = <img className="react-native-icon" src={img_src} alt={icon} />
+            break;
+        
+        case 'css.png':
+            img = <img className="css-icon" src={img_src} alt={icon} />
             break;
         default: 
             caption = icon.replace('.png','');
+            infoBox = <p className="info-box">{caption}</p>
+            img = <img src={img_src} alt={icon} />
     }
 
 
     return (
         <section className="tech">
-            <img src={img_src} alt={icon}/>
-            <span class="info-box">{caption}</span> 
+            {/* <img src={img_src} alt={icon}/> */}
+            {img}
+            {/* <p class="info-box">{caption}</p>  */}
+            {infoBox}
         </section>
     )
 }
