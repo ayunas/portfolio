@@ -70,38 +70,38 @@ const ContactPage = () => {
                     <a href="http://www.twitter.com/amiryunas" target="_blank">
                     <Icon icon={twitter} width={60}/>
                     <br/>
-                    <span class="info-box">Twitter</span> 
+                    <p class="info-box">Twitter</p> 
                     </a>
                 </div>
                 <div className="social-div stack-overflow">
                     <a href="https://stackoverflow.com/users/8161309/amir-yunas" target="_blank">
                     <Icon icon={stackoverflow} width={50}/>
                     <br/>
-                    <span class="info-box">Stackoverflow</span>
+                    <p class="info-box">Stackoverflow</p>
                     </a>
                 </div>
                 <div className="social-div">
                     <a href="http://www.github.com/ayunas" target="_blank"><Icon icon={github} width={60}/>
                     <br/>
-                    <span class="info-box">Github</span>
+                    <p class="info-box github">Github</p>
                     </a>
                 </div>
                 <div className="social-div">
                     <a href="https://medium.com/@amiryunas" target="_blank"><Icon icon={medium} width={60} color="black" />
                     <br/>
-                    <span class="info-box">Medium</span>
+                    <p class="info-box medium">Medium</p>
                     </a>
                 </div>
                 <div className="social-div cent">
                     <a href="https://beta.cent.co/@ayunas" target="_blank"><img src={centco} style={{width : '6rem'}}/>
                     <br/>
-                    <span class="info-box">Cent.co</span>
+                    <p class="info-box">Cent.co</p>
                     </a>    
                 </div>
                 <div className="social-div">
-                    <a href="https://linkedin.com/in/amiryunas" target="_blank"><img src={linkedin} style={{width : '9rem'}}/>
+                    <a href="https://linkedin.com/in/amiryunas" target="_blank"><img src={linkedin} style={{width : '8rem', marginTop : '-1.5rem'}}/>
                     <br/>
-                    <span class="info-box">LinkedIN</span>
+                    <p class="info-box linkedin-popup">Linkedin</p>
                     </a>
                 </div>
             </section>
